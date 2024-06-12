@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+
+    .top{ 
+        /* background-color: green;    */
+        margin: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+
+        width: 1024px;
+        height:65px ;
+       
+
+        border: 1px solid #000;
+            
+    }
+    .container{ 
+        /* background-color:pink; */
+        margin: auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center; 
+
+        height: calc(1024px - 20px - 65px);
+        width: 1024px;        
+  
+        
+        border: 1px solid #000;
+    }
+        .container>.menu{
+            display: flex;
+            flex-wrap:wrap;
+            width: 215px;
+            height:100%;
+            justify-content: center;
+
+            background: #ccc;
+        }
+            .container>.menu>.item{
+                width: 215px;
+                height: calc(100% - 25px);
+                display: flex;
+               justify-content: center; 
+
+               font-family:'標楷體';
+               font-weight: 500;
+            }
+                .item-title{
+                    font-size: 24px;
+                    box-shadow: 0 1px; /* 底線 */
+                    color:#f0f;
+                    margin-top: 0px; /* 靠上 */ 
+                }
+                .item-btn{
+                    display: flex;
+                    flex-wrap:wrap;
+                    
+                    font-size: 16px;             
+                    color:#000;
+                    justify-content: center;
+               
+                }
+
+
+
+            .container>.menu>.update{
+                width: 215px;
+                height: 25px;
+                display: flex;
+               justify-content: center; 
+                align-items: center;
+                font-size: 16px;
+                color: #000;
+                font-family: '標楷體';
+                border: 1px solid #000;
+            }
+
+        .container>.main{
+            display: flex;
+            flex-wrap:wrap;
+            width: 770px;
+            height: 100%;
+            justify-content: center;
+
+            background: gold;
+        }
+            .container>.main>.marquee{
+                width: 770px;
+                height: 29px;
+                font-size: 24px;
+                font-family: '標楷體';
+                color: #000;
+
+                margin-top: 0px;/*垂直靠上對齊*/
+
+                
+            }
+            .container>.main>.content{
+                
+            }
+
+    .footer{
+        /* background-color: green;   */
+        margin: auto;
+        width: 1024px;
+        height:20px ;        
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+
+        border: 1px solid #000;
+        font-size: 16px;
+        color: #000;
+        font-family: '標楷體';
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        top-logo
+    </div>
+
+    <!-- container -->
+    <div class="container">    
+        <table class="menu">
+            <tr class="item">
+                <td></td>
+            </tr>
+            <tr class="update">
+                <td>
+                    最近更新日期：2024/05/29
+                </td>
+            </tr>
+        </table>
+<!-- 
+            <div class="item"><div class="menu">
+        
+
+                <div class="item-title">
+                社團介紹
+                </div>
+                <p></p>
+                <div class="item-btn">
+                吉他社
+                </div> -->
+
+
+<!-- 
+            </div>
+            <div class="update">
+                最近更新日期：2024/05/29
+            </div>
+        </div> -->
+
+        <table class="main">
+
+        </table>
+        <!-- <div class="main">
+            <div class="marquee">
+                <marquee behavior="" direction="">歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參</marquee>
+            </div>
+            <div class="content">
+
+            </div>
+        </div>-->
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        網頁設及水維護：01陳靖雯
+    </div>    
+
+</body>
+</html>
