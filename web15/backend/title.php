@@ -12,11 +12,13 @@
                     <td></td>
                 </tr>
                 <?php
-                include_once "../api/base.php";
+                // include_once "../api/base.php"; //本列替代以下兩列
                 // $dsn = "mysql:host=localhost;charset=utf8;dbname=db991";
                 // $pdo = new PDO($dsn, 'root', '');
-                $sql = "select * from title";
-                $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+                $row=$Title->all();
+                // $sql = "select * from title";
+                // $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
                 foreach ($rows as $row) {
 
                 ?>
@@ -48,6 +50,7 @@
                         <input type="button" onclick="op('#cover','#cvr','./modals/title.php')" value="新增網站標題圖片">
                     </td>
                     <td class="cent">
+                        <input type="hidden" name="table" value="<?=$dp; ?>">
                         <input type="submit" value="修改確定">
                         <input type="reset" value="重置">
                     </td>
